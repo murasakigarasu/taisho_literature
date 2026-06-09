@@ -2,7 +2,6 @@
 
 !pip install stanza
 !pip install gensim
-!pip install adjustText
 from tqdm import tqdm
 import os
 import re
@@ -11,16 +10,8 @@ import stanza
 stanza.download("ja")
 nlp_stanza = stanza.Pipeline(lang="ja", processors="tokenize, pos, lemma, depparse, ner")
 import gensim
-from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 import numpy as np
-from adjustText import adjust_text
-from sklearn.cluster import KMeans
-import plotly.graph_objects as go
-import plotly.express as px
-import json
-from gensim.models import LdaModel
-from gensim import corpora
 
 # Create function for preprocessing
 
